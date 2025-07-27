@@ -9,9 +9,6 @@
     },
     "api/sentiment.js": {
       "maxDuration": 30
-    },
-    "api/ml-predict.js": {
-      "maxDuration": 30
     }
   },
   "routes": [
@@ -20,12 +17,8 @@
       "dest": "/api/health.js"
     },
     {
-      "src": "/api/sentiment/analyze",
+      "src": "/api/sentiment",
       "dest": "/api/sentiment.js"
-    },
-    {
-      "src": "/api/ml/predict",
-      "dest": "/api/ml-predict.js"
     },
     {
       "src": "/(.*)",
