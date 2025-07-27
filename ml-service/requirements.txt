@@ -1,0 +1,28 @@
+# Web framework
+Flask==2.3.3
+Flask-CORS==4.0.0
+
+# Core ML dependencies
+scikit-learn>=1.1.0
+pandas>=1.5.0
+numpy>=1.21.0
+joblib>=1.1.0
+
+# Text processing
+nltk>=3.7
+textblob>=0.17.1
+regex>=2022.7.9
+
+# API and serialization
+marshmallow==3.20.1
+python-dotenv==1.0.0
+
+# Monitoring and logging
+psutil==5.9.5
+
+# Development and testing
+pytest==7.4.2
+pytest-flask==1.2.0
+
+# Performance
+gunicorn==21.2.0
