@@ -1,23 +1,31 @@
 {
   "version": 2,
   "name": "sentiment-iq",
-  "builds": [
-    {
-      "src": "frontend/package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "build"
-      }
+  "buildCommand": "cd frontend && npm install && npm run build",
+  "outputDirectory": "frontend/build",
+  "functions": {
+    "api/health.js": {
+      "maxDuration": 30
     },
-    {
-      "src": "backend/server.js",
-      "use": "@vercel/node"
+    "api/sentiment.js": {
+      "maxDuration": 30
+    },
+    "api/ml-predict.js": {
+      "maxDuration": 30
     }
-  ],
+  },
   "routes": [
     {
-      "src": "/api/(.*)",
-      "dest": "/backend/server.js"
+      "src": "/api/health",
+      "dest": "/api/health.js"
+    },
+    {
+      "src": "/api/sentiment/analyze",
+      "dest": "/api/sentiment.js"
+    },
+    {
+      "src": "/api/ml/predict",
+      "dest": "/api/ml-predict.js"
     },
     {
       "src": "/(.*)",
@@ -26,10 +34,5 @@
   ],
   "env": {
     "NODE_ENV": "production"
-  },
-  "functions": {
-    "backend/server.js": {
-      "maxDuration": 30
-    }
   }
 }

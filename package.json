@@ -1,0 +1,24 @@
+{
+  "name": "sentiment-iq",
+  "version": "1.0.0",
+  "description": "AI-powered sentiment analysis web application",
+  "main": "api/index.js",
+  "scripts": {
+    "build": "cd frontend && npm install && npm run build",
+    "dev": "cd frontend && npm start",
+    "start": "cd frontend && npm start"
+  },
+  "keywords": [
+    "sentiment-analysis",
+    "ai",
+    "machine-learning",
+    "react",
+    "vercel"
+  ],
+  "author": "Huzaifa Jadoon",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/huzaifajadoon700/-Sentiment-IQ.git"
+  }
+}
