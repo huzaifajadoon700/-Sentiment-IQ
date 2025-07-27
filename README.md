@@ -2,11 +2,6 @@
 
 A full-stack web application that analyzes the emotional tone of text using machine learning. Built with React frontend, Node.js backend, and Python ML service.
 
-![Sentiment Analysis Demo](https://img.shields.io/badge/Status-Working-brightgreen)
-![React](https://img.shields.io/badge/React-18.x-blue)
-![Node.js](https://img.shields.io/badge/Node.js-16+-green)
-![Python](https://img.shields.io/badge/Python-3.8+-yellow)
-
 ## 🌟 What This Project Does
 
 This application analyzes text and determines whether the sentiment is:
@@ -421,5 +416,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 **Made with ❤️ for sentiment analysis**
-#   S e n t i m e n t - I Q  
+#   S e n t i m e n t - I Q 
+ 
  
